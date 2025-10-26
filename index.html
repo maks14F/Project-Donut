@@ -7,7 +7,7 @@
     <title>Donut</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <img class="header__logo" src="./image/logo.png" alt="Logo">
@@ -28,7 +28,7 @@
                         <a href="" class="header__link">Reviews</a>
                     </li> 
                     <li class="header__item">
-                        <a href="" class="header__link">Contacts</a>
+                        <a href="" class="header__link--background">Contacts</a>
                     </li>
                 </ul>
             </div>
@@ -37,12 +37,142 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1></h1>
-                <h2></h2>
-                <button></button>
-                <svg>
-                    <use href="./image/symbol-defs.svg#icon-facebook"></use>
-                </svg>
+                <h1 class="hero__title">Donut Masterclass with<br>the Donut King</h1>
+                <h2 class="hero__subtitle">Hosted by Eva Green</h2>
+                <button class="button">Register</button>
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <svg class="hero__icon">
+                            <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="hero__item">
+                        <svg class="hero__icon">
+                            <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="hero__item">
+                        <svg class="hero__icon">
+                            <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                    <img class="about__image" src="./image/man-baker.png" alt="Man baker">
+                    <div class="about__wrapper">
+                        <h2 class="title">About us</h2>
+                                <p class="about__desc">Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save the world!</p>
+                                <p class="about__desc">Eva has been baking since she was six years old and over the last 49 years, she<br>
+                                                       has created hundreds of cakes for weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for excellence.</p>
+                                <p class="about__desc">We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will enjoy our cooking atmosphere!</p>
+                    </div>
+            </div>
+        </section>
+        <section class="program">
+            <div class="container">
+                <h2 class="title">Program</h2>
+                <p class="program__text">Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York donut shop!</p>
+                <ul class="program__list">
+                    <li class="program__item">
+                        <svg class="program__icon">
+                            <use href="./image/symbol-defs.svg#icon-chef"></use>
+                        </svg>
+                        <p class="program__desc">A stand up history of donuts</p>
+                    </li>
+                    <li class="program__item">
+                        <svg class="program__icon">
+                            <use href="./image/symbol-defs.svg#icon-chef"></use>
+                        </svg>
+                        <p class="program__desc">Make 3 donut flavors of your choice</p>
+                    </li>
+                    <li class="program__item">
+                        <svg class="program__icon">
+                            <use href="./image/symbol-defs.svg#icon-chef"></use>
+                        </svg>
+                        <p class="program__desc">Enjoy all-you-can-eat donuts</p>
+                    </li>
+                    <li class="program__item">
+                        <svg class="program__icon">
+                            <use href="./image/symbol-defs.svg#icon-chef"></use>
+                        </svg>
+                        <p class="program__desc">Cocktail pairings and coffee included</p>
+                    </li>
+                    <li class="program__item">
+                        <svg class="program__icon">
+                            <use href="./image/symbol-defs.svg#icon-chef"></use>
+                        </svg>
+                        <p class="program__desc">Photoshoot by professional photographer</p>
+                    </li>
+                    <li class="program__item">
+                        <svg class="program__icon">
+                            <use href="./image/symbol-defs.svg#icon-chef"></use>
+                        </svg>
+                        <p class="program__desc">Secret receipt of cooking from Eva</p>
+                    </li>
+                    <li class="program__item">
+                        <svg class="program__icon">
+                            <use href="./image/symbol-defs.svg#icon-chef"></use>
+                        </svg>
+                        <p class="program__desc">All products are included in the price</p>
+                    </li>
+                </ul>
+                <p class="program__text">Come with your dear people and friends
+                                         and you will spend an unforgettable time and
+                                         will become a real professional
+                                         in donuts cooking!
+                </p>
+                <ul class="program__roster">
+                    <li class="program__clause">
+                        <div class="program__overlay">
+                            <img class="program__image" src="./image/cooking-classes.png" alt="Cooking classes">
+                        </div>
+                    </li>
+                    <li class="program__clause">
+                        <div class="program__overlay">
+                            <img class="program__image" src="./image/number.png" alt="Number of guests">
+                        </div>
+                    </li>
+                    <li class="program__clause">
+                        <div class="program__overlay">
+                            <img class="program__image" src="./image/type-event.png" alt="Man with clock">
+                        </div>
+                    </li>
+                    <li class="program__clause">
+                        <div class="program__overlay">
+                            <img class="program__image" src="./image/host-speaks.png" alt="Host speaks">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="speakers">
+            <div class="container">
+                <h2 class="title">Speakers</h2>
+                <ul class="speakers__list">
+                    <li class="speakers__item">
+                        <img class="speakers__image" src="./image/molly.png" alt="Molly Rivera">
+                        <h3 class="speakers__subtitle">Molly Rivera</h3>
+                        <p class="speakers__desc">Pastry chef, master<br>chocolatier of Spain,</p>
+                    </li>
+                    <li class="speakers__item">
+                        <img class="speakers__image" src="./image/sophia.png" alt="Sophia Clark">
+                        <h3 class="speakers__subtitle">Sophia Clark</h3>
+                        <p class="speakers__desc">Сulinary school pastry<br>chef</p>
+                    </li>
+                    <li class="speakers__item">
+                        <img class="speakers__image" src="./image/isabella.png" alt="Isabella Taylor">
+                        <h3 class="speakers__subtitle">Isabella Taylor</h3>
+                        <p class="speakers__desc">Сonsultant in the art<br>of confectionery</p>
+                    </li>
+                    <li class="speakers__item">
+                        <img class="speakers__image" src="./image/evelyn.png" alt="Evelyn Miller">
+                        <h3 class="speakers__subtitle">Evelyn Miller</h3>
+                        <p class="speakers__desc">Master- chocolatier<br>in Spain</p>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

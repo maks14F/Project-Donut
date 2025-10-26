@@ -1,1 +1,35 @@
 @use '../utils/variables' as *;
+
+.program {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 16px;
+        flex-direction: row;
+        align-items: center;
+        color: $main-text-color;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px 0px;
+    }
+
+    & .title {
+        padding-bottom: 24px;
+    }
+
+    &__text {
+        width: 392px;
+        color: $main-text-color;
+    }
+}
