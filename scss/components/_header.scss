@@ -1,0 +1,17 @@
+@use '../utils/variables' as *;
+
+.header {
+    padding-top: 36px;
+    padding-bottom: 65px;
+    
+    &__wrapper {
+        display: flex;
+        gap: 55px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}

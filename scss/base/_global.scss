@@ -1,0 +1,11 @@
+@use '../utils/variables' as *;
+
+body {
+  font-family: $main-font;
+  font-size: 18px;
+}
+
+.container {
+  width: 1248px;
+  margin: 0 auto;
+}

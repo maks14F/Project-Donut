@@ -1,0 +1,7 @@
+@use '../utils/variables' as *;
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    color:$main-text-color;
+
+}

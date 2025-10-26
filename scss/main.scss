@@ -1,0 +1,14 @@
+@use './utils/variables';
+
+@use './base/reset';
+@use './base/global';
+
+@use './components/header';
+@use './components/hero';
+@use './components/about';
+@use './components/program';
+@use './components/speakers';
+@use './components/price';
+@use './components/reviews';
+@use './components/registration';
+@use './components/contact';
