@@ -17,13 +17,6 @@
         color: $main-text-color;
     }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        padding: 20px 0px;
-    }
-
     & .title {
         padding-bottom: 24px;
     }
@@ -31,5 +24,67 @@
     &__text {
         width: 392px;
         color: $main-text-color;
+    }
+
+    &__clause {
+        border-radius: 50%;
+        width: 288px;
+        height: 288px;
+        text-align: center;
+        color: $text-on-backround-color;
+        border: 1px solid $line-color;
+        position: relative;
+    }
+
+    &__clause:nth-child(1) {
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('/image/cooking-classes.png');
+    }
+
+    &__clause:nth-child(3) {
+        margin-top: 36px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('/image/type-event.png');
+    }
+
+    &__clause:nth-child(4) {
+        top: 60px;
+        margin-top: 40px;
+        margin-left: 138px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('/image/host-speaks.png');
+    }
+
+    &__clause:nth-child(2) {
+        top: 60px;
+        margin-left: 138px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('/image/number.png');
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px 0px;
+    }
+
+    &__roster {
+        width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 140px;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__description {
+        font-size: 16px;
+        padding-top: 16px;
+    }
+
+    &__subtitle {
+        font-family: $second-font;
+        font-size: 24px;
+        font-weight: 500;
+        padding-top: 191px;
     }
 }
