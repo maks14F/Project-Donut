@@ -7,4 +7,13 @@
     color: $button-text-color;
     border: none;
     font-size: 18px;
+    &--header {
+        color: $button-text-color;
+        background: linear-gradient(to bottom,#ff8c87 0%,#FD568F 100%);
+        padding: 4px 8px;
+        border: none;
+        border-radius: 0px;
+        height: 30px;
+        margin-top: 20px;
+    }
 }

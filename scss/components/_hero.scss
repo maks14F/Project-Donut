@@ -1,7 +1,11 @@
 @use '../utils/variables' as *;
 
 .hero {
-    padding-bottom: 90px;
+    background-image: url(../image/hero-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 
     &__icon {
         width: 16px;

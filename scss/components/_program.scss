@@ -37,25 +37,25 @@
     }
 
     &__clause:nth-child(1) {
-        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('/image/cooking-classes.png');
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('../image/cooking-classes.png');
     }
 
     &__clause:nth-child(3) {
         margin-top: 36px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('/image/type-event.png');
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('../image/type-event.png');
     }
 
     &__clause:nth-child(4) {
         top: 60px;
         margin-top: 40px;
         margin-left: 138px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('/image/host-speaks.png');
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('../image/host-speaks.png');
     }
 
     &__clause:nth-child(2) {
         top: 60px;
         margin-left: 138px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('/image/number.png');
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('../image/number.png');
     }
 
     &__list {
