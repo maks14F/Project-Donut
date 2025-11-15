@@ -36,3 +36,33 @@
         color: $main-text-color;
     }
 }
+
+@media (max-width:768px) {
+    .hero {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__list {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .hero {
+        text-align: center;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+    }
+}

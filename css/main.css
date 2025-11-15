@@ -162,6 +162,40 @@ body {
   margin: 0 auto;
 }
 
+.desc--display {
+  padding-top: 32px;
+  line-height: 125%;
+  color: #3C322D;
+}
+
+.link--display {
+  display: none;
+  color: #3C322D;
+  font-size: 16px;
+  padding-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .desc--display {
+    display: none;
+  }
+  .text--display {
+    display: none;
+  }
+  .link--display {
+    display: block;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
 .header {
   padding-top: 36px;
   padding-bottom: 65px;
@@ -221,6 +255,28 @@ body {
   color: #3C322D;
 }
 
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 30px;
+  }
+  .hero__subtitle {
+    font-size: 16px;
+  }
+  .hero__list {
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  .hero {
+    text-align: center;
+  }
+  .hero__title {
+    font-size: 28px;
+  }
+  .hero__subtitle {
+    font-size: 16px;
+  }
+}
 .about {
   padding-top: 90px;
 }
@@ -239,6 +295,27 @@ body {
   color: #3C322D;
 }
 
+@media (max-width: 768px) {
+  .about__image {
+    width: 336px;
+    height: 359px;
+  }
+  .about__desc {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .about .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about__image {
+    width: 280px;
+    height: 285px;
+    margin: 0 auto;
+  }
+}
 .program {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -272,21 +349,33 @@ body {
 }
 .program__clause:nth-child(1) {
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(156, 156, 156, 0)), url("../image/cooking-classes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .program__clause:nth-child(3) {
   margin-top: 36px;
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(156, 156, 156, 0)), url("../image/type-event.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .program__clause:nth-child(4) {
   top: 60px;
   margin-top: 40px;
   margin-left: 138px;
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(156, 156, 156, 0)), url("../image/host-speaks.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .program__clause:nth-child(2) {
   top: 60px;
   margin-left: 138px;
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(156, 156, 156, 0)), url("../image/number.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .program__list {
   display: flex;
@@ -314,6 +403,57 @@ body {
   padding-top: 191px;
 }
 
+@media (max-width: 768px) {
+  .program__text {
+    width: 329px;
+  }
+  .program__clause {
+    width: 152px;
+    height: 152px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+  }
+  .program__clause:nth-child(2) {
+    margin-left: 38px;
+    right: 0;
+  }
+  .program__clause:nth-child(3) {
+    margin-top: 0;
+  }
+  .program__clause:nth-child(1) {
+    margin-top: 0;
+  }
+  .program__clause:nth-child(4) {
+    margin-left: 38px;
+    right: 0;
+    top: 0;
+  }
+  .program__subtitle {
+    font-size: 16px;
+    padding-top: 55px;
+  }
+  .program__description {
+    font-size: 14px;
+    padding-top: 8px;
+  }
+  .program__roster {
+    width: 600px;
+    padding-left: 40px;
+  }
+  .program__desc {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .about .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .speakers {
   padding-bottom: 101px;
 }
@@ -344,6 +484,34 @@ body {
   color: #3C322D;
 }
 
+@media (max-width: 768px) {
+  .speakers__image {
+    width: 152px;
+    height: 160px;
+  }
+  .speakers__desc {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .speakers__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .speakers__image {
+    width: 130px;
+    height: 141px;
+  }
+  .speakers__desc {
+    font-size: 12px;
+  }
+  .speakers__subtitle {
+    font-size: 16px;
+    padding: 12px 0px;
+  }
+}
 .title {
   font-weight: 500;
   font-size: 32px;
@@ -351,6 +519,11 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
+@media (max-width: 320px) {
+  .title {
+    text-align: center;
+  }
+}
 .button {
   background-color: #F3848C;
   padding: 9px 35px;

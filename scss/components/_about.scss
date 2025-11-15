@@ -20,3 +20,34 @@
         color: $main-text-color;
     }
 }
+
+@media (max-width:768px) {
+    .about {
+        &__image {
+            width: 336px;
+            height: 359px;
+        }
+
+        &__desc {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .about {
+        & .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__image {
+            width: 280px;
+            height: 285px;
+            margin: 0 auto;
+        }
+
+    }
+}
+

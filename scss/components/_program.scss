@@ -38,11 +38,17 @@
 
     &__clause:nth-child(1) {
         background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('../image/cooking-classes.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &__clause:nth-child(3) {
         margin-top: 36px;
         background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('../image/type-event.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &__clause:nth-child(4) {
@@ -50,12 +56,18 @@
         margin-top: 40px;
         margin-left: 138px;
         background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('../image/host-speaks.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &__clause:nth-child(2) {
         top: 60px;
         margin-left: 138px;
         background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(156, 156, 156, 0)), url('../image/number.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &__list {
@@ -88,3 +100,71 @@
         padding-top: 191px;
     }
 }
+
+@media (max-width:768px) {
+    .program {
+        &__text {
+            width: 329px;
+        }
+
+        &__clause {
+            width: 152px;
+            height: 152px;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: top;
+        }
+
+        &__clause:nth-child(2) {
+            margin-left: 38px;
+            right: 0;
+        }
+
+        &__clause:nth-child(3) {
+            margin-top: 0;
+        }
+
+        &__clause:nth-child(1) {
+            margin-top: 0;
+        }
+
+        &__clause:nth-child(4) {
+            margin-left: 38px;
+            right: 0;
+            top: 0;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            padding-top: 55px;
+        }
+
+        &__description {
+            font-size: 14px;
+            padding-top: 8px;
+        }
+
+        &__roster {
+            width: 600px;
+            padding-left: 40px;
+        }
+
+        &__desc {
+            font-size: 16px;
+        }
+    }   
+}
+
+@media (max-width:320px) {
+    .about {
+        & .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
+

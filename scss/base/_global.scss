@@ -10,3 +10,42 @@ body {
   width: 1280px;
   margin: 0 auto;
 }
+
+.desc--display {
+    padding-top: 32px;
+    line-height: 125%;
+    color: $main-text-color;
+}
+
+.link--display {
+  display: none;
+  color: $main-text-color;
+  font-size: 16px;
+  padding-top: 16px;
+}
+
+@media (max-width:768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  
+  .desc--display {
+    display: none;
+  }
+
+  .text--display {
+    display: none;
+  }
+
+  .link--display {
+    display: block;
+  }
+}
+
+@media (max-width:320px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}

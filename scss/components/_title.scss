@@ -6,3 +6,9 @@
     color:$main-text-color;
     font-family: $second-font;
 }
+
+@media (max-width:320px) {
+    .title {
+        text-align: center;
+    }
+}
