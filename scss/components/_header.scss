@@ -5,6 +5,12 @@
     padding-bottom: 65px;
     display: flex;
     align-items: center;
+
+    & .container {
+        display: flex;
+        align-items: center;
+    }
+
     &__wrapper {
         display: flex;
         gap: 55px;
@@ -21,10 +27,9 @@
         color: $main-text-color;
     }
 
-    &__button--background {
-        color: $button-text-color;
-        background: linear-gradient(to bottom,#ff8c87 0%,#FD568F 100%);
-        padding: 4px 8px;
-        border: none;
+    &__icon {
+        fill: $main-text-color;
+        width: 158px;
+        height: 70px;
     }
 }

@@ -202,6 +202,10 @@ body {
   display: flex;
   align-items: center;
 }
+.header .container {
+  display: flex;
+  align-items: center;
+}
 .header__wrapper {
   display: flex;
   gap: 55px;
@@ -215,11 +219,10 @@ body {
 .header__link {
   color: #3C322D;
 }
-.header__button--background {
-  color: #FCFCFC;
-  background: linear-gradient(to bottom, #ff8c87 0%, #FD568F 100%);
-  padding: 4px 8px;
-  border: none;
+.header__icon {
+  fill: #3C322D;
+  width: 158px;
+  height: 70px;
 }
 
 .hero {
@@ -512,6 +515,71 @@ body {
     padding: 12px 0px;
   }
 }
+.price .title {
+  text-align: center;
+  padding-bottom: 27px;
+}
+.price .button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.price__list {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+.price__roster {
+  padding: 0px 10px;
+}
+.price__item {
+  box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+  border-radius: 25px;
+  width: 394px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.price__item:hover {
+  border: 1px solid #F3848C;
+}
+.price__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.price__clause {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  padding-top: 16px;
+}
+.price__subtitle {
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  font-style: bold;
+  padding-top: 28px;
+}
+.price__item:nth-child(1) .price--button {
+  text-align: center;
+  margin-top: 258px;
+}
+.price__item:nth-child(2) .price--button {
+  text-align: center;
+  margin-top: 160px;
+}
+.price__item:nth-child(3) .price--button {
+  text-align: center;
+  margin-top: 40px;
+}
+.price__desc {
+  font-size: 18px;
+  display: block;
+  line-height: 100%;
+}
+
 .title {
   font-weight: 500;
   font-size: 32px;
@@ -526,18 +594,20 @@ body {
 }
 .button {
   background-color: #F3848C;
+  width: 145px;
   padding: 9px 35px;
   border-radius: 25px;
   color: #FCFCFC;
   border: none;
   font-size: 18px;
+  box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
 }
 .button--header {
   color: #FCFCFC;
   background: linear-gradient(to bottom, #ff8c87 0%, #FD568F 100%);
-  padding: 4px 8px;
   border: none;
-  border-radius: 0px;
+  font-size: 18px;
+  margin-left: 20px;
   height: 30px;
-  margin-top: 20px;
+  box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
 }

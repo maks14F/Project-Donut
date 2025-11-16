@@ -1,1 +1,80 @@
 @use '../utils/variables' as *;
+
+.price {
+    & .title {
+        text-align: center;
+        padding-bottom: 27px;
+    }
+
+    & .button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
+    }
+
+    &__roster {
+        padding: 0px 10px;
+    } 
+
+    &__item {
+        box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+        border-radius: 25px;
+        width: 394px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    &__item:hover {
+        border: 1px solid $line-color;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+
+    &__clause {
+        display: flex;
+        gap: 17px;
+        align-items: center;
+        padding-top: 16px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-family: $second-font;
+        font-weight: 600;
+        font-size: 20px;
+        font-style: bold;
+        padding-top: 28px;
+    }
+
+    &__item:nth-child(1) &--button {
+        text-align: center;
+        margin-top: 258px;
+    }
+
+    &__item:nth-child(2) &--button {
+        text-align: center;
+        margin-top: 160px;
+    }
+
+    &__item:nth-child(3) &--button {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        display: block;
+        line-height: 100%;
+    }
+}   
