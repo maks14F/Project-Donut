@@ -1,1 +1,24 @@
 @use '../utils/variables' as *;
+
+.registration {
+    padding-bottom: 126px;
+
+    & .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

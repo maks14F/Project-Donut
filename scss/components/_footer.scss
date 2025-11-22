@@ -1,1 +1,19 @@
 @use '../utils/variables' as *;
+
+.footer {
+    padding: 100px 0 101px;
+
+    & .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__phone, &__town {
+        font-family: $main-font;
+        color: $second-text-color;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}

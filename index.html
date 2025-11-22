@@ -319,7 +319,7 @@
         <section class="reviews">
             <div class="container">
                 <h2 class="title">Reviews</h2>
-                <ul class="reviews_list">
+                <ul class="reviews__list">
                     <li class="reviews__item">
                         <img src="./image/john.png" alt="John's image">
                         <ul class="reviews__stars-list">
@@ -353,7 +353,6 @@
                     </li>
                     <li class="reviews__item">
                         <img src="./image/will.png" alt="Will's image">
-                        <p class="reviews__name">Will</p>
                         <ul class="reviews__stars-list">
                             <li class="reviews__stars-item">
                                 <svg class="reviews__stars-vector">
@@ -381,6 +380,7 @@
                                 </svg>
                             </li>
                         </ul>
+                        <p class="reviews__name">Will</p>
                     </li>
                     <li class="reviews__item">
                         <img src="./image/elisabeth.png" alt="Elisabeth's image">
@@ -427,13 +427,15 @@ Thank you so much for the masterclass! Looking forward to the next one and highl
                 <div class="registration__wrap">
                     <img src="./image/donut.png" alt="donuts">
                     <p class="registration__date">May 23, 11:00<br>New York</p>
-                    <h3 class="registration__title">Apply your personal info<br>for registration</h3>
-                    <form class="registration__form">
-                        <input type="text" placeholder="Your name" class="registration__input">
-                        <input type="tel" placeholder="Phone number" class="registration__input">
-                        <input type="mail" placeholder="Email" class="registration__input">
-                        <button type="submit" class="button">Register</button>
-                    </form>
+                    <div class="registration__wrapper">
+                        <h3 class="registration__title">Apply your personal info<br>for registration</h3>
+                        <form class="registration__form">
+                            <input type="text" placeholder="Your name" class="registration__input">
+                            <input type="tel" placeholder="Phone number" class="registration__input">
+                            <input type="mail" placeholder="Email" class="registration__input">
+                            <button type="submit" class="button">Register</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -474,7 +476,7 @@ Thank you so much for the masterclass! Looking forward to the next one and highl
     </main>
     <footer class="footer">
         <div class="container">
-            <a href="tel:9102228855" class="footer__phone">(910)222-8855</p>
+            <a href="tel:9102228855" class="footer__phone">(910)222-8855</a>
             <p class="footer__town">New York</p>
         </div>
     </footer>
