@@ -54,5 +54,23 @@
         font-family: $main-font;
         font-weight: 400;
         font-size: 16px;
+
+        &::before {
+            content: "";
+            display: contents;
+            color: $line-color;
+            width: 35px;
+            height: 3px;
+            margin-right: 10px;
+        }
+        
+        &::after {
+            content: "";
+            display: contents;
+            color: $line-color;
+            width: 35px;
+            height: 3px;
+            margin-left: 10px;
+        }
     }
 }

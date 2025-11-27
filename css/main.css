@@ -80,6 +80,7 @@ summary,
 time,
 mark,
 audio,
+input,
 video {
   margin: 0;
   padding: 0;
@@ -628,6 +629,22 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
+.reviews__date::before {
+  content: "";
+  display: contents;
+  color: #F3848C;
+  width: 35px;
+  height: 3px;
+  margin-right: 10px;
+}
+.reviews__date::after {
+  content: "";
+  display: contents;
+  color: #F3848C;
+  width: 35px;
+  height: 3px;
+  margin-left: 10px;
+}
 
 .registration {
   padding-bottom: 126px;
@@ -641,8 +658,7 @@ body {
   display: flex;
   align-items: center;
   border-radius: 10px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.4509803922);
 }
 .registration__form {
   display: flex;

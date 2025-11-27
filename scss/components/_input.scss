@@ -1,0 +1,9 @@
+@use '../utils/variables' as *;
+
+.input {
+    font-family: $main-font;
+    color: $second-text-color;
+    border-bottom: 1px $second-text-color solid;
+    font-weight: 400;
+    font-size: 16px;
+}
