@@ -1,1 +1,33 @@
 @use '../utils/variables' as *;
+
+.contact {
+
+    & .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &__link {
+        color: $main-text-color;
+    }
+
+    &__icon {
+        fill: $main-text-color;
+        width: 158px;
+        height: 70px;
+    }
+}
